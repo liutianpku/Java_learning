@@ -40,3 +40,4 @@ public class ScannerTest {
 		System.out.println("You have entered: " + n + " and " + d );
 	}
 }
+

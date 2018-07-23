@@ -2,6 +2,10 @@ class Rnd_36_7
 {
 	public static void main(String[] args)
 	{
+		int [][]t = new int[3][];
+		t[0] = new int [2];
+		t[1] = new int [5];
+		t[2] = new int [12];
 		int a[] = new int[7];
 		for( int i=0;i<a.length;i++)
 		{

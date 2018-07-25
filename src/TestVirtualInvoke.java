@@ -1,33 +1,33 @@
 class TestVirtualInvoke
 {
-	static void doStuff( Shape s ){
+	static void doStuff( Shape1 s ){
 		s.draw();
 	}
 
 	public static void main( String [] args ){
-		Circle c = new Circle();
-		Triangle t = new Triangle();
-		Line l = new Line();
+		Circle1 c = new Circle1();
+		Triangle1 t = new Triangle1();
+		Line1 l = new Line1();
 		doStuff(c);
 		doStuff(t);
 		doStuff(l);
 	}
 }
-class Shape
+class Shape1
 {
-	void draw(){ System.out.println("Shape Drawing"); }
+	void draw(){ System.out.println("Shape1 Drawing"); }
 }
-class Circle extends Shape
+class Circle1 extends Shape1
 {
-	void draw(){ System.out.println("Draw Circle"); }
-}
-
-class Triangle extends Shape
-{
-	void draw(){ System.out.println("Draw Three Lines"); }
+	void draw(){ System.out.println("Draw Circle1"); }
 }
 
-class Line extends Shape
+class Triangle1 extends Shape1
 {
-	void draw(){ System.out.println("Draw Line"); }
+	void draw(){ System.out.println("Draw Three Line1s"); }
+}
+
+class Line1 extends Shape1
+{
+	void draw(){ System.out.println("Draw Line1"); }
 }
